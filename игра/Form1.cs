@@ -133,10 +133,10 @@ namespace игра
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ram = new Random();
-            r1 = ram.Next(4, 15);
-            r2 = ram.Next(4, 15);
-            r3 = ram.Next(4, 15);
+           Random ram = new Random();
+           int r1 = r1 = ram.Next(4, 15);
+           int r2 = r2 = ram.Next(4, 15);
+           int r3 = r3 = ram.Next(4, 15);
         } //перезапуск скорости противников 
 
         private void button2_Click(object sender, EventArgs e)
