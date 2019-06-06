@@ -19,12 +19,37 @@ namespace игра
         }
 
         private void save1_Click(object sender, EventArgs e)
-        {   int save1 = 0;
-            int save2 = 0;
-            int save3 = 0; //доработка
-            if 
-            File.WriteAllText("C:\\Users\\Arterion\\Desktop\\save1.txt", Convert.ToString(Parametrs.score));
-            File.AppendAllText("C:\\Users\\Arterion\\Desktop\\save1.txt", "\n" + Convert.ToString(Parametrs.tyan));
+        {
+           
+            
+            File.WriteAllText("C:\\Users\\user\\Desktop\\save1.txt", textBox1.Text);
+            File.AppendAllText("C:\\Users\\user\\Desktop\\save1.txt", "\n" + Convert.ToString(Parametrs.score));
+            File.AppendAllText("C:\\Users\\user\\Desktop\\save1.txt", "\n" + Convert.ToString(Parametrs.tyan));
+            File.AppendAllText("C:\\Users\\user\\Desktop\\save1.txt", "\n" + Convert.ToString(Parametrs.speed));
         }
+
+        private void Download1_Click(object sender, EventArgs e)
+        {
+          
+            FileStream file = new FileStream("C:\\Users\\user\\Desktop\\save1.txt", FileMode.Open);
+            StreamReader reader = new StreamReader(file); // создаем «потоковый читатель» и связываем его с файловым потоком
+    
+            string save1 = reader.ReadLine();
+            if (textBox2.Text == save1)
+            {
+                Parametrs.score= Convert.ToInt16(reader.ReadLine());
+                Parametrs.tyan = Convert.ToBoolean(reader.ReadLine());
+                Parametrs.speed=Convert.ToInt16(reader.ReadLine());
+            }
+            else
+            {
+                MessageBox.Show("не правильный пароль");
+            }
+
+
+            reader.Close(); //закрываем поток
+            
+        }
+
     }
 }

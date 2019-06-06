@@ -16,16 +16,10 @@ namespace игра
         public Form1()
         {
             InitializeComponent();
-            ram = new Random();
-            r1 = ram.Next(4, 15);
-            r2 = ram.Next(4, 15);
-            r3 = ram.Next(4, 15);
+
         }
 
-        Random ram;
-        int r1;
-        int r2;
-        int r3;
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -35,7 +29,10 @@ namespace игра
 
         private void timer1_Tick(object sender, EventArgs e) 
         {
-
+            Random ram = new Random();
+            int r1 = ram.Next(4, 15);
+            int r2 = ram.Next(4, 15);
+            int r3 = ram.Next(4, 15);
 
             int x = pictureBox1.Location.X;
             pictureBox1.Left = x + Parametrs.speed;
