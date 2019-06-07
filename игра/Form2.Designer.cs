@@ -38,12 +38,10 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::игра.Properties.Resources._1;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(123, 77);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(82, 50);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 35);
+            this.button1.Size = new System.Drawing.Size(114, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Скорость +1";
             this.button1.UseVisualStyleBackColor = true;
@@ -52,19 +50,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(303, 85);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(202, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 20);
+            this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "100 кредитов";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(123, 123);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(82, 80);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 35);
+            this.button2.Size = new System.Drawing.Size(114, 23);
             this.button2.TabIndex = 2;
             this.button2.Text = "Скин";
             this.button2.UseVisualStyleBackColor = true;
@@ -75,10 +71,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(303, 138);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(202, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 20);
+            this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "1000 кредитов";
             // 
@@ -86,25 +81,23 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(456, 42);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(304, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(536, 365);
+            this.pictureBox1.Size = new System.Drawing.Size(357, 237);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // Mag
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 565);
+            this.ClientSize = new System.Drawing.Size(673, 367);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Mag";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Mag_Load);

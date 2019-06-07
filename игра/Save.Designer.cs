@@ -30,158 +30,75 @@
         {
             this.save1 = new System.Windows.Forms.Button();
             this.Download1 = new System.Windows.Forms.Button();
-            this.save2 = new System.Windows.Forms.Button();
-            this.Download2 = new System.Windows.Forms.Button();
-            this.save3 = new System.Windows.Forms.Button();
-            this.Download3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.loginbox = new System.Windows.Forms.TextBox();
+            this.passwordbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // save1
             // 
-            this.save1.Location = new System.Drawing.Point(250, 86);
-            this.save1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.save1.Location = new System.Drawing.Point(130, 56);
             this.save1.Name = "save1";
-            this.save1.Size = new System.Drawing.Size(128, 35);
+            this.save1.Size = new System.Drawing.Size(85, 23);
             this.save1.TabIndex = 0;
-            this.save1.Text = "Сохранение 1";
+            this.save1.Text = "Сохранение";
             this.save1.UseVisualStyleBackColor = true;
             this.save1.Click += new System.EventHandler(this.save1_Click);
             // 
             // Download1
             // 
-            this.Download1.Location = new System.Drawing.Point(674, 86);
-            this.Download1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Download1.Location = new System.Drawing.Point(221, 56);
             this.Download1.Name = "Download1";
-            this.Download1.Size = new System.Drawing.Size(112, 35);
+            this.Download1.Size = new System.Drawing.Size(75, 23);
             this.Download1.TabIndex = 1;
             this.Download1.Text = "Загрузить";
             this.Download1.UseVisualStyleBackColor = true;
             this.Download1.Click += new System.EventHandler(this.Download1_Click);
             // 
-            // save2
+            // loginbox
             // 
-            this.save2.Location = new System.Drawing.Point(250, 163);
-            this.save2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.save2.Name = "save2";
-            this.save2.Size = new System.Drawing.Size(128, 35);
-            this.save2.TabIndex = 2;
-            this.save2.Text = "Сохранение 2";
-            this.save2.UseVisualStyleBackColor = true;
+            this.loginbox.Location = new System.Drawing.Point(313, 59);
+            this.loginbox.Name = "loginbox";
+            this.loginbox.Size = new System.Drawing.Size(100, 20);
+            this.loginbox.TabIndex = 6;
             // 
-            // Download2
+            // passwordbox
             // 
-            this.Download2.Location = new System.Drawing.Point(674, 163);
-            this.Download2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Download2.Name = "Download2";
-            this.Download2.Size = new System.Drawing.Size(112, 35);
-            this.Download2.TabIndex = 3;
-            this.Download2.Text = "Загрузить";
-            this.Download2.UseVisualStyleBackColor = true;
-            // 
-            // save3
-            // 
-            this.save3.Location = new System.Drawing.Point(250, 243);
-            this.save3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.save3.Name = "save3";
-            this.save3.Size = new System.Drawing.Size(128, 35);
-            this.save3.TabIndex = 4;
-            this.save3.Text = "Сохранение 3";
-            this.save3.UseVisualStyleBackColor = true;
-            // 
-            // Download3
-            // 
-            this.Download3.Location = new System.Drawing.Point(674, 243);
-            this.Download3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Download3.Name = "Download3";
-            this.Download3.Size = new System.Drawing.Size(112, 35);
-            this.Download3.TabIndex = 5;
-            this.Download3.Text = "Загрузить";
-            this.Download3.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(387, 89);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 26);
-            this.textBox1.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(848, 91);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 26);
-            this.textBox2.TabIndex = 7;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(387, 168);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 26);
-            this.textBox3.TabIndex = 8;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(848, 168);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(148, 26);
-            this.textBox4.TabIndex = 9;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(387, 248);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(148, 26);
-            this.textBox5.TabIndex = 10;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(848, 248);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(148, 26);
-            this.textBox6.TabIndex = 11;
+            this.passwordbox.Location = new System.Drawing.Point(431, 59);
+            this.passwordbox.Name = "passwordbox";
+            this.passwordbox.Size = new System.Drawing.Size(100, 20);
+            this.passwordbox.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(250, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(310, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(333, 20);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Пароль должен содержать только цифры";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Логин";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(428, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Пароль";
             // 
             // Save
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.Download3);
-            this.Controls.Add(this.save3);
-            this.Controls.Add(this.Download2);
-            this.Controls.Add(this.save2);
+            this.Controls.Add(this.passwordbox);
+            this.Controls.Add(this.loginbox);
             this.Controls.Add(this.Download1);
             this.Controls.Add(this.save1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Save";
             this.Text = "Save";
             this.ResumeLayout(false);
@@ -193,16 +110,9 @@
 
         private System.Windows.Forms.Button save1;
         private System.Windows.Forms.Button Download1;
-        private System.Windows.Forms.Button save2;
-        private System.Windows.Forms.Button Download2;
-        private System.Windows.Forms.Button save3;
-        private System.Windows.Forms.Button Download3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox loginbox;
+        private System.Windows.Forms.TextBox passwordbox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
