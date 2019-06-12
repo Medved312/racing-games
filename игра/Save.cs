@@ -50,6 +50,23 @@ namespace игра
             loginAttribute.AppendChild(loginValue);
             passwordAttribute.AppendChild(passwordValue);
 
+            if (isExist)
+            {
+                XmlElement saves = saveFile.DocumentElement;
+
+                foreach (XmlNode save in saves)
+                {
+                    var login = save.Attributes.GetNamedItem("login").InnerText;
+                    var password = save.Attributes.GetNamedItem("password").InnerText;
+
+                    if (login == loginbox.Text && password == passwordbox.Text)
+                    {
+                        MessageBox.Show("Такое сохрание уже есть");
+                        return;
+                    }
+                }
+            };
+
             scoreElement.AppendChild(scoreValue);
             speedElement.AppendChild(speedValue);
             tyanElement.AppendChild(tyanValue);
@@ -68,7 +85,11 @@ namespace игра
                 saveFile.AppendChild(root);
             }
 
+
+
             saveFile.Save(saveFilePath + saveFileName);
+
+
         }
 
         private void Download1_Click(object sender, EventArgs e)

@@ -171,12 +171,12 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(446, 156);
+            this.button3.Location = new System.Drawing.Point(446, 140);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 23);
+            this.button3.Size = new System.Drawing.Size(96, 39);
             this.button3.TabIndex = 15;
             this.button3.TabStop = false;
-            this.button3.Text = "Рестарт";
+            this.button3.Text = "Удалить все сохранения";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -236,7 +236,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Aqua;
-            this.button4.Location = new System.Drawing.Point(446, 120);
+            this.button4.Location = new System.Drawing.Point(446, 105);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(96, 23);
             this.button4.TabIndex = 16;
@@ -268,7 +268,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

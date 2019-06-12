@@ -47,8 +47,6 @@ namespace игра
             {
                 Parametrs.score -= 1000;
                 Parametrs.tyan = true;
-                
-
             }
         }
 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Resources;
+using System.IO;
 
 namespace игра
 {
@@ -16,13 +17,6 @@ namespace игра
         public Form1()
         {
             InitializeComponent();
-
-        }
-
-
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
         }
 
@@ -133,10 +127,7 @@ namespace игра
 
         private void button3_Click(object sender, EventArgs e)
         {
-           Random ram = new Random();
-           int r1 = r1 = ram.Next(4, 15);
-           int r2 = r2 = ram.Next(4, 15);
-           int r3 = r3 = ram.Next(4, 15);
+            File.Delete("D:/save.xml"); 
         } //перезапуск скорости противников 
 
         private void button2_Click(object sender, EventArgs e)
