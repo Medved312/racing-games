@@ -69,6 +69,7 @@
             this.passwordbox.Name = "passwordbox";
             this.passwordbox.Size = new System.Drawing.Size(100, 20);
             this.passwordbox.TabIndex = 7;
+            this.passwordbox.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -101,6 +102,7 @@
             this.Controls.Add(this.save1);
             this.Name = "Save";
             this.Text = "Save";
+            this.Load += new System.EventHandler(this.Save_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

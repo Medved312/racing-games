@@ -74,7 +74,7 @@ namespace игра
             PictureBox pb = new PictureBox();
             if(pictureBox1.Image == Properties.Resources._2)
             {
-                pictureBox1.Image = Properties.Resources._1;
+               pictureBox1.Image = Properties.Resources._1;
             }
             
             pictureBox2.Image = Properties.Resources._1;
