@@ -100,7 +100,6 @@
             this.Controls.Add(this.button1);
             this.Name = "Mag";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Mag_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

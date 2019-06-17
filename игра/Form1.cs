@@ -128,7 +128,7 @@ namespace игра
         private void button3_Click(object sender, EventArgs e)
         {
             File.Delete("D:/save.xml"); 
-        } //перезапуск скорости противников 
+        } //удаление сохранений
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -142,8 +142,6 @@ namespace игра
             save.Show();
            
         }//сохранение
-
-
     }
 }
 
