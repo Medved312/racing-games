@@ -102,7 +102,6 @@
             this.Controls.Add(this.save1);
             this.Name = "Save";
             this.Text = "Save";
-            this.Load += new System.EventHandler(this.Save_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
